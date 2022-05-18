@@ -18,8 +18,6 @@ def validate(num_card):
     check_sum = 0
     for i in range(len(nums)):
         check_sum += nums[i]
-    for i in range(len(nums)):
-        print(nums[i], end = ' ')
     return (check_sum + checker_num) % 10 == 0
 if validate(input()):
     print('It is valid')
